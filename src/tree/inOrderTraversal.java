@@ -42,6 +42,7 @@ public class inOrderTraversal {
                 root = root.left;
             }
             // Pop out one node to be the root.
+            // 非常关键，直接用root来表示当前最左下节点。
             root = stack.pop();
             res.add(root.val);
             // Go through right part of tree.
